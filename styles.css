@@ -1,0 +1,106 @@
+section {
+    border: solid thin #ccc;
+    border-radius: 8px;
+    padding:10px 20px 10px 20px;
+    width: 80%;
+    margin: 15px 0px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.input-group >label, .input-group select{
+    display: block;
+    margin-bottom: 6px;
+    margin-right:10px;
+}
+
+.input-group > label, fieldset > legend {
+    font-weight: 700;
+    color:#0c0c0c;  
+}
+
+.validation-error {
+    border:  red solid thin;
+    background: rgba(255,0,0,0.055)
+}
+.validation-error-div {
+    background: rgba(255,0,0,0.055);
+    border: red solid thin;
+    color: rgba(255,0,0,0.9);
+    padding:20px;
+    border-radius: 7px;
+    font-size:18px;
+    width:450px;
+}
+
+.hidden {
+    display: none;
+}
+
+.calculate-button-container{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="button"]{
+  
+    border: 1px solid #cdcdcd;
+    padding: 12px 5%;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    background: white;
+    border-radius: 0;
+    font-size: 18px;
+    margin: auto;
+    justify-content: center;
+}
+
+input[type="button"]:hover{
+    background: #715583;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.reset-button {
+    color:gray !important;
+}
+
+.invisible{
+    display: none !important;
+}
+
+.loan-summary {
+    border:1px solid #cdcdcd;
+    border-radius: 8px;
+    font-size:16px;
+    width:300px;
+    margin: 20px 20px 20px 120px;
+    padding: 20px 20px 20px 20px;
+}
+
+.schedule {
+    margin: 20px 20px 20px 100px;
+    padding: 20px 20px 20px 20px;
+    width:300px;
+}
+
+table, th ,td {
+    border: thin solid;
+    border-spacing: 0px;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody tr:hover td, .table tbody tr:hover th {
+    background-color: RGBA(113,85,131,0.2);
+}

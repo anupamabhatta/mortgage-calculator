@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mortgage Schedule</title>
+    <meta name="author" content="Anupama Bhatta">
+    <meta name="description" content="Mortgage Schedule">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="parent-container">
+        <form>
+            <section id="property">
+                <div id="PropertyValidationErrors" class="hidden validation-error-div"></div>
+                <h2>Property Options</h2>
+                <div class="input-group">
+                    <label for="dropSize">Size</label>
+                    <select id="dropSize" required
+                        onchange="populateSquareFeet(this.form, this.value); getPrice(this.form); validateDropDown(this);">
+                        <option value="">Select size</option>
+                        <option value="1">Small</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="dropSquareFeet">Sq.feet</label>
+                    <select id="dropSquareFeet" required disabled
+                        onchange="populateBedrooms(this.form, this.value); getPrice(this.form);">
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="dropBedroomCount">Bedrooms</label>
+                    <select id="dropBedroomCount" required disabled 
+                    onchange="getPrice(this.form);">
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <fieldset>
+                        <legend>Property Options</legend>
+                        <input type="checkbox" name="propertyOptions" value="4000" id="cheGarage" disabled
+                            onchange="getPrice(this.form);">
+                        <label for="cheGarage">Garage</label>
+
+                        <input type="checkbox" name="propertyOptions" value="5000" id="cheLakeView" disabled
+                            onchange="getPrice(this.form);">
+                        <label for="cheLakeView">Lake View</label>
+
+                        <input type="checkbox" name="propertyOptions" value="12000" id="cheFence" disabled
+                            onchange="getPrice(this.form);">
+                        <label for="cheFence">Fence</label>
+
+                        <input type="checkbox" name="propertyOptions" value="3500" id="cheCuldeSac" disabled
+                            onchange="getPrice(this.form);">
+                        <label for="cheCuldeSac">Cul de Sac</label>
+
+
+                        <input type="checkbox" name="propertyOptions" value="20000" id="cheSolarPanels" disabled
+                            onchange="getPrice(this.form);">
+                        <label for="cheSolarPanels">Solar Panels</label>
+
+                    </fieldset>
+                </div>
+
+                <h3>Property Price: <span id="price"></span></h3>
+            </section>
+
+            <section id="loan">
+                <div id="LoanValidationErrors" class="hidden validation-error-div"></div>
+                <h2>Loan Options</h2>
+
+                <div class="input-group">
+                    <fieldset id="fldRadUse">
+                        <legend>Loan Use</legend>
+                        <input type="radio" name="radUse" value="1" id="radPersonal" rquired
+                            onchange="validateRadioButtons(this); getInterest(this.form);">
+                        <label for="radPersonal">Personal</label>
+                        <input type="radio" name="radUse" value="1.05" id="radBusiness" required
+                            onchange="validateRadioButtons(this); getInterest(this.form)">
+                        <label for="radBusiness">Business</label>
+                    </fieldset>
+                </div>
+
+                <div class="input-group">
+                    <label for="dropCreditRating">Credit Rating</label>
+                    <select id="dropCreditRating" required 
+                        onchange="getInterest(this.form);">
+                        <option value="">Select rating</option>
+                        <option value="1">Exceptional 800-850</option>
+                        <option value="2">Excellent 740-799</option>
+                        <option value="3">Good 670-736</option>
+                        <option value="4">Fair 580-669</option>
+                        <option value="5">Poor 579-300</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="dropLoanLength">Length in years</label>
+                    <select id="dropLoanLength" required 
+                        onchange="getInterest(this.form);">
+                        <option value="">Select length</option>
+                        <option value="5">5 years</option>
+                        <option value="10">10 years</option>
+                        <option value="15">15 years</option>
+                        <option value="20">20 years</option>
+                        <option value="25">25 years</option>
+                        <option value="30">30 years</option>
+                    </select>
+                </div>
+
+                <h3>Annual Interest Rate: <span id="interestRate"></span></h3>
+            </section>
+
+            <div class="calculate-button-container" id="calculate-button-container">
+                <input type="button" value="CALCULATE MORTAGE SCHEDULE" 
+                    onclick="generateSchedule(this.form);">
+                <input type="button" class="reset-button" name="btnClear" id="btnClear" value="clear form"
+                    onclick="clearForm(this.form);">
+            </div>
+        </form>
+    </div>
+
+    <div class="loan-summary hidden" id="loan-summary">
+        <div>
+            <label><strong>Loan Amount: </strong></label><span id="summaryPrice">   </span>
+        </div>
+        <div>
+            <label><strong>Loan Length: </strong></label><span id="summaryLength">  </span>
+        </div>
+        <div>
+            <label><strong>Annual Interest Rate: </strong></label><span id="summaryInterest">   </span>
+        </div>
+        <div>
+            <label><strong>Number of monthly payments: </strong></label><span id="summaryPaymentCount"> </span>
+        </div>
+    </div>
+
+    <div id="schedule" class="schedule"></div>
+
+    <script src="functions.js" async defer></script>
+
+</body>
+
+</html>
