@@ -1,5 +1,5 @@
 
-# **Mortgage Schedule**
+# **Mortgage Calculator**
 
 ## **Description**
 
@@ -15,7 +15,8 @@ A web application to calculate and visualize detailed mortgage payment schedules
 ## **Getting Started**
 
 Simply click on the GitHub Pages link to access the application:
-[Mortgage Schedule](https://anupamabhatta.github.io/mortgage-calculator/).
+[Mortgage Calculator](https://anupamabhatta.github.io/mortgage-calculator/)
+
 Alternatively, open `index.html` in any web browser—no installation required.
 
 ## **Technologies Used**
