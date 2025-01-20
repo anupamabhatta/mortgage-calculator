@@ -1,40 +1,40 @@
-# Mortgage Schedule
 
-## Description
+# **Mortgage Schedule**
 
-The Mortgage Schedule project is a web application designed to help users calculate and visualize the payment schedule for a mortgage. It allows users to input various property and loan options, such as property size, bedrooms, loan use, credit rating, loan length, etc., and generates a detailed schedule of mortgage payments.
+## **Description**
 
-## Features
+A web app to calculate and visualize a detailed mortgage payment schedule. Users can input property and loan details to generate a breakdown of monthly payments.
 
-- **Property Options:** Users can select property options such as size, bedrooms, and additional features like garage, lake view, fence, etc.
-- **Loan Options:** Users can specify loan use (personal or business), credit rating, and loan length to calculate the annual interest rate.
-- **Calculate Mortgage Schedule:** Once all options are selected, users can click the "Calculate Mortgage Schedule" button to generate a detailed payment schedule.
-- **Loan Summary:** After calculating, a loan summary is displayed, including loan amount, loan length, annual interest rate, and the number of monthly payments.
-- **Payment Schedule:** The application generates a payment schedule table, showing the breakdown of each monthly payment including principal, interest, and total payment.
+## **Features**
 
-## Getting Started
+- **Property Options**: Customize options like size, bedrooms, and features (garage, lake view, etc.).
+- **Loan Options**: Specify loan use, credit rating, and loan length to calculate the interest rate.
+- **Mortgage Calculation**: Generate a payment schedule showing principal, interest, and total payments.
+- **Loan Summary**: View loan amount, loan length, annual interest rate, and total monthly payments.
 
-To use the Mortgage Schedule application, simply open the HTML file in a web browser. No additional setup or installation is required.
+## **Getting Started**
 
-## Technologies Used
+Open `index.html` in any web browser—no installation required.
 
-- HTML
-- CSS
-- JavaScript
+## **Technologies Used**
 
-## File Structure
+- **HTML**: Structure
+- **CSS**: Styling
+- **JavaScript**: Functionality
 
-- `index.html`: Main HTML file containing the mortgage schedule interface.
-- `styles.css`: CSS file for styling the interface.
-- `functions.js`: JavaScript file containing functions for calculating mortgage schedules and handling user interactions.
+## **File Structure**
 
-## Usage
+- `index.html`: Main interface
+- `styles.css`: Styling for the application
+- `functions.js`: Logic for calculating mortgage payments
 
-1. Select property options including size, bedrooms, and additional features.
-2. Specify loan options including loan use, credit rating, and loan length.
-3. Click the "Calculate Mortgage Schedule" button to generate the payment schedule.
-4. Review the loan summary and payment schedule to understand the mortgage terms.
+## **Usage**
 
-## Contributing
+1. Select property details (size, bedrooms, features).
+2. Enter loan details (use, credit rating, loan length).
+3. Click **"Calculate Mortgage Schedule"** to generate results.
+4. Review the loan summary and detailed payment breakdown.
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+## **Contributing**
+
+Contributions are welcome! Feel free to open an issue or submit a pull request with improvements or fixes.
