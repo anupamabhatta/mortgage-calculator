@@ -30,6 +30,7 @@ Alternatively, open `index.html` in any web browser—no installation required.
 - `styles.css`: Styling for the application
 - `functions.js`: JavaScript file containing logic for calculating mortgage schedules
 - `.DS_Store`: macOS system file (can be ignored)
+- `README.md`: Documentation file with project details and instructions.
 
 ## **Usage**
 
