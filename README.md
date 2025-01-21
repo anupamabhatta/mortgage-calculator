@@ -1,4 +1,3 @@
-
 # **Mortgage Calculator**
 
 ## **Description**
@@ -27,9 +26,10 @@ Alternatively, open `index.html` in any web browser—no installation required.
 
 ## **File Structure**
 
-- `index.html`: Main interface
+- `index.html`: Main interface of the mortgage calculator
 - `styles.css`: Styling for the application
-- `functions.js`: Logic for calculating mortgage schedules
+- `functions.js`: JavaScript file containing logic for calculating mortgage schedules
+- `.DS_Store`: macOS system file (can be ignored)
 
 ## **Usage**
 
